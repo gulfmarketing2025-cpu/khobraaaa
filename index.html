@@ -228,7 +228,7 @@ footer ul{list-style:none;padding:0}
 <script>
 const CFG={phone:"0576943279",intl:"966576943279",msg:"السلام عليكم، أحتاج خدمة تسليك مجاري بالرياض. أريد الاستفسار عن الخدمة المناسبة لمشكلتي"};
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
-$$("[data-call]").forEach(a=>{a.href="tel:+"+CFG.intl;if(a.hasAttribute("data-show"))a.textContent=CFG.phone});
+$$("[data-call]").forEach(a=>{a.href="tel:"+CFG.phone;if(a.hasAttribute("data-show"))a.textContent=CFG.phone});
 $$("[data-wa]").forEach(a=>a.href="https://wa.me/"+CFG.intl+"?text="+encodeURIComponent(CFG.msg));
 $("#yr").textContent=new Date().getFullYear();
 const P={drop:'<path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/>',pipe:'<path d="M3 8h10a4 4 0 0 1 4 4v8M3 12h6"/>',sink:'<path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zM12 12V5h4"/>',bath:'<path d="M6 11V6a2 2 0 0 1 4 0M3 11h18v2a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5z"/>',grate:'<circle cx="12" cy="12" r="8"/><path d="M8 9h8M8 12h8M8 15h8"/>',shower:'<path d="M5 8a7 7 0 0 1 14 0zM8 12v2M12 12v3M16 12v2M10 18v2M14 18v2"/>',room:'<rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 10h16M10 10v9"/>'};
@@ -282,5 +282,5 @@ function upd(){
 }
 addEventListener("scroll",upd,{passive:true});addEventListener("resize",upd);upd();
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"الخبراء لتسليك المجاري بالرياض","telephone":"+966576943279","areaServed":"الرياض"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"الخبراء لتسليك المجاري بالرياض","telephone":"0576943279","areaServed":"الرياض"}</script>
 </body></html>
